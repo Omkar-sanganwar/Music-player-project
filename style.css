@@ -1,0 +1,146 @@
+/* Full-screen background video */
+#background-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+/* Basic styling */
+body {
+  font-family: Arial, sans-serif;
+  color: white;
+  margin: 0;
+}
+
+/* Navbar styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: linear-gradient(45deg, yellow, purple, blue);
+  animation: disco 3s infinite;
+}
+
+@keyframes disco {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.logo {
+  height: 50px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #4CAF50;
+}
+
+/* Image Slider styling */
+.image-slider {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  margin: 10px 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.slider {
+  display: flex;
+  animation: slide 10s infinite;
+}
+
+.slider img {
+  width: 300px; /* Set the width for 1:1 ratio */
+  height: 300px; /* Set height equal to width */
+  border: 2px solid #4CAF50;
+  border-radius: 10px;
+  margin: 0 5px;
+}
+
+@keyframes slide {
+  0% { transform: translateX(0); }
+  20% { transform: translateX(0); }
+  21% { transform: translateX(-100%); }
+  40% { transform: translateX(-100%); }
+  41% { transform: translateX(-200%); }
+  60% { transform: translateX(-200%); }
+  61% { transform: translateX(-300%); }
+  80% { transform: translateX(-300%); }
+  81% { transform: translateX(-400%); }
+  100% { transform: translateX(-400%); }
+}
+
+/* Music player styling */
+.player {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(60, 64, 67, 0.9);
+  padding: 20px;
+  border-top: 2px solid #4CAF50;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+}
+
+.controls button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  margin: 5px;
+  font-size: 16px;
+}
+
+.controls button:hover {
+  background-color: #45a049;
+}
+
+/* Progress bar styling */
+.progress-container {
+  width: 80%;
+  background-color: #333;
+  height: 10px;
+  border-radius: 10px;
+  margin: 20px auto;
+  position: relative;
+}
+
+#progress-bar {
+  height: 100%;
+  background-color: #4CAF50;
+  width: 0%;
+  border-radius: 10px;
+  transition: width 0.1s;
+}

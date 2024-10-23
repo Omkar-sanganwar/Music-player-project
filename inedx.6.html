@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Music Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Video -->
+    <video autoplay muted loop id="background-video">
+        <source src="C:/Users/HP/Downloads/3403450-uhd_4096_2160_25fps.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+
+    <!-- Navigation bar -->
+    <nav class="navbar">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrcAt2e-dLdLDxFmGJdXXFdmsRxgITK5bBJ-Ob7PeCQKB7VxAneTR5w6v2dv6cSJpEWIs&usqp=CAU" alt="Logo" class="logo">
+        <ul class="nav-links">
+            <li><a href="https://wynk.in/music">Home</a></li>
+            <li><a href="https://wynk.in/music/package/trending-in-hindi/amsta_4jf452131595580528558?ref=sub_header">Trending Now</a></li>
+            <li><a href="https://wynk.in/music/list/old-songs/bb_1579060284409?ref=sub_header">Old Songs</a></li>
+            <li><a href="https://wynk.in/music/list/new-releases/amhyb_vnow19351643796144680?ref=sub_header">New Songs</a></li>
+            <li><a href="https://wynk.in/music/playlist/party-bollywood-style/bb_1523519272640?ref=sub_header">Moods & Genre</a></li>
+            <li><a href="https://wynk.in/music/list/top-artists/bb_1543220050600?ref=sub_header">Top Artists</a></li>
+            <li><a href="https://wynk.in/music/playlist/wynk-top-100-songs/bb_1577097670143?ref=sub_header">Top Playlists</a></li>
+            <li><a href="https://wynk.in/podcasts?ref=sub_header">Podcasts</a></li>
+        </ul>
+    </nav>
+
+    <!-- Image Slider -->
+    <div class="image-slider">
+        <div class="slider">
+            <img src="C:\Users\HP\Downloads\images.jpg" alt="Image 1">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQy0Roh1kBTrkyGL158Jd5BQUn8G41yBRvKttkdIYbWp0xtQ26Bo3rBMi2EITJexVIrPuY&usqp=CAU" alt="Image 2">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlaJBDHokWBRRujSTKOQoXTx05bS3ZbRk7QMkmoOuHnoMD9nk06L7TRIFlJSUaFB3fmsI&usqp=CAU" alt="Image 3">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkYpxQ8t2vznoTAv84GosIGYYLJlZoPyG2tj4Y8FMtDU5By8Hj7aLZZF7lsqVE_cTB6OU&usqp=CAU" alt="Image 4"> <!-- New Image -->
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHDn5scSFDyZ62rS62u-vLacHoAqZJW_6TcCkJ230jqOO5WfVEa17NlRyzjw9wzyGnB68&usqp=CAU" alt="Image 5"> <!-- New Image -->
+        </div>
+    </div>
+
+    <!-- Music Player -->
+    <div class="player">
+        <h1>Music Player</h1>
+        <audio id="audio" src=""></audio>
+        <div class="controls">
+            <button id="play">Play</button>
+            <button id="pause">Pause</button>
+            <button id="next">Next</button>
+        </div>
+        <!-- Progress Bar -->
+        <div class="progress-container">
+            <div id="progress-bar"></div>
+        </div>
+    </div>
+
+    <script src="B.js"></script>
+</body>
+</html>
